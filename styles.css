@@ -1,0 +1,195 @@
+:root {
+    --blue: #4417DD;
+    --blue-dark: #240d74;
+}
+
+body {
+    background-color: #ff874f;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    padding: 10px 0;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+.nav-link:hover {
+    color: #d1e9ff;
+}
+
+section {
+    border: 3px solid pink
+}
+
+.services {
+    margin: 40px auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20% !important;
+    margin: 10px auto;
+    padding: 0px;
+    width: 350px !important;
+    height: 350px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fake-service {
+    background-color: white;
+    border-radius: 20% !important;
+    margin: 10px auto;
+    padding: 0px;
+    width: 350px !important;
+    height: 350px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .top {
+    padding: 20px;
+    width: 100%;
+}
+
+.bottom {
+    margin-top: auto; /* This pushes the bottom div to the base */
+    padding: 20px;
+    width: 100%;
+}
+
+.pos-top-end {
+    align-items: end;
+    justify-content: start;
+}
+
+img {
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.text-end {
+    align-self: flex-end;
+}
+
+.text-start {
+    align-self: flex-start;
+}
+
+.card.no-border {
+    border: none;
+    box-shadow: none;
+}
+
+.margin-x-10 {
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+}
+
+.margin-x-20 {
+    margin-right: 10% !important;
+    margin-left: 10% !important;
+}
+
+.button-primary {
+    background-color: var(--blue);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/*cards proyecto destacado*/
+.proy-dest-card-2 {
+    background-color: white;
+    border: none !important;
+    border-radius: 15px !important;
+    margin: 10px;
+    width: auto;
+    height: 0;
+    padding-top: 33.33%; /* This creates a height based on 1:3 ratio */
+    position: relative;
+    overflow: hidden;
+}
+
+.img-proy-dest {
+    width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+    height: auto; /* Mantén el aspecto de la imagen al cambiar el ancho */
+    aspect-ratio: 1 / 1; /* Asegura que la imagen sea cuadrada */
+    object-fit: cover; /* Cubre el área del contenedor, recortando si es necesario */
+    border-radius: 15px; /* Si quieres bordes redondeados */
+}
+
+.proy-dest-card h3 {
+    padding-top: 1.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--blue);
+    padding: 15px 25px;
+    border: 2px solid var(--blue);
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* General adjustments */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Card adjustments */
+.card-quote {
+    background-color: white;
+    border-radius: 12px;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+.card-quote-body {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-quote-body .color-square {
+    height: 70px;
+    width: 70px;
+    background-color: black; /* Cambia el color según sea necesario */
+}
+
+.card-quote-text {
+    text-align: left;
+    margin-left: 20px; /* Ajusta la separación entre el cuadrado y el texto */
+}
+
+/* Center cards touching each other */
+.col-md-5 {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0; /* Elimina el espacio entre las cards */
+}
