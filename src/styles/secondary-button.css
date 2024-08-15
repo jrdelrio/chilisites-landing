@@ -1,0 +1,14 @@
+:root {
+    --blue: #4417DD;
+    --blue-dark: #240d74;
+}
+
+.button-secondary {
+    background-color: transparent;
+    color: var(--blue);
+    padding: 15px 25px;
+    border: 2px solid var(--blue);
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

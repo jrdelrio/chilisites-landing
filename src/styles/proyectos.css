@@ -1,0 +1,65 @@
+:root {
+    --blue: #4417DD;
+    --blue-dark: #240d74;
+    --light-purple: #E8E7FF
+}
+
+.proyectos-destacados {
+    background-color: var(--light-purple);
+    padding-top: 50px;
+}
+
+.section-title {
+    font-size: 2.1rem;
+    color: var(--blue-dark);
+}
+
+/* Smartphones (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    .margin-x-10 {
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+    }
+
+    .--bs-gutter-x-sm-0 {
+        --bs-gutter-x: 0 !important;
+    }
+
+    .section-title {
+        font-size: 2.9rem;
+    }
+
+    .max-width-sm-80vw {
+        max-width: 90vw;
+    }
+}
+
+/* Tablets (min-width: 576px) and (max-width: 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .--bs-gutter-x-sm-0 {
+        --bs-gutter-x: 0 !important;
+    }
+
+    .max-width-md-90vw {
+        max-width: 95vw;
+    }
+
+
+   
+}
+
+/* Desktops (min-width: 992px) */
+@media (min-width: 992px) {
+    .max-width-lg-80vw {
+        max-width: 80vw;
+    }
+
+    .font-size {
+        font-size: 3.5rem
+    }
+
+    .max-width-sm-80vw {
+        max-width: 80vw;
+        
+    }
+}
