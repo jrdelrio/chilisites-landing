@@ -2,13 +2,22 @@ import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import logo from "../img/logo-chilisites.png";
 import "../styles/navbar.css";
+import { Offcanvas } from "bootstrap"; // Importa Bootstrap para manejar el offcanvas
 
 const Navbar = () => {
+  const handleClick = () => {
+    const offcanvasElement = document.getElementById("offcanvasNavbar");
+    const offcanvasInstance = Offcanvas.getInstance(offcanvasElement);
+    if (offcanvasInstance) {
+      offcanvasInstance.hide(); // Cierra el offcanvas
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg mx-lg-5 d-flex align-items-center">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src={logo} className="navbar-logo"/>
+          <img src={logo} className="navbar-logo" alt="Chilisites Logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -22,7 +31,7 @@ const Navbar = () => {
         </button>
         <div
           className="offcanvas offcanvas-end"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
@@ -40,23 +49,30 @@ const Navbar = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#">
+                <a className="nav-link" aria-current="page" href="#servicios">
                   SERVICIOS
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#proyectos">
                   PROYECTOS
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="#about-us">
                   SOBRE NOSOTROS
                 </a>
               </li>
             </ul>
             <div className="align-devices mt-3">
-            <PrimaryButton title="CONTÁCTANOS" />
+              <a href="#contact">
+                <button className="button-primary" type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close">
+                  CONTÁCTANOS
+                </button>
+              </a>
+
             </div>
           </div>
         </div>

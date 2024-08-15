@@ -5,7 +5,15 @@
 }
 
 #contact {
-    background-color: var(--light-purple);
+    background-image: linear-gradient(
+        to bottom,
+        white 0%,       /* Empieza en blanco en la parte superior */
+        var(--light-purple) 5%,      /* Mantén blanco hasta el 20% de la altura */
+        var(--light-purple) 50%,       /* Cambia a aqua en el 50% de la altura */
+        var(--light-purple) 100%      /* Cambia de nuevo a blanco en el 80% */
+    );
+    padding-top: 60px;
+    padding-bottom: 1.5rem;
 }
 
 .form-size {

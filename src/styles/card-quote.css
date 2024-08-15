@@ -15,6 +15,17 @@
     margin: auto;
 }
 
+.quote-text p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.quote-text h3 {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 /* Smartphones (max-width: 575.98px) */
 @media (max-width: 575.98px) {
 

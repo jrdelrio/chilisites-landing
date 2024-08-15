@@ -56,7 +56,7 @@ const Proyectos = () => {
 
 
   return (
-    <section className="text-center proyectos-destacados">
+    <section id="proyectos" className="text-center proyectos-destacados">
       <h2 className="my-5 section-title font-size">PROYECTOS DESTACADOS</h2>
       <div className="row margin-x-10 margin-x-5 mb-3 max-width-md-90vw max-width-sm-80vw max-width-lg-80vw mx-auto">
         {proyectosDestacados.map((proyecto) => (

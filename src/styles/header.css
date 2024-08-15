@@ -2,12 +2,18 @@
     --blue: #4417DD;
     --blue-dark: #240d74;
     --light-purple: #E8E7FF;
+    --dark-purple: #B4AFFF;
 }
 
 .header {
-    background-color: var(--light-purple);
     padding: 3rem;
+    background-image: linear-gradient(to bottom right,
+            var(--dark-purple) 0%,
+            white 50%,
+            white 100%);
 }
+
+
 
 /* presentation */
 .main-title {
@@ -69,7 +75,7 @@
 /* Desktops (min-width: 992px) */
 @media (min-width: 992px) {
     .titillium-web-semibold {
-       font-size: 2.5rem;
+        font-size: 2.5rem;
     }
 
     .main-subtitle {

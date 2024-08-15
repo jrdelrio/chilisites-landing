@@ -9,9 +9,12 @@
 
 .nav-item {
     font-weight: bold;
-    color: var(--blue-dark);
     margin-right: 40px;
     margin-left: 40px;
+}
+
+.nav-item a {
+    color: var(--blue-dark);
 }
 
 /* Smartphones (max-width: 575.98px) */
@@ -43,6 +46,6 @@
     }
 
     .navbar-logo {
-        height: 60px;
+        height: 100px;
     }
 }
