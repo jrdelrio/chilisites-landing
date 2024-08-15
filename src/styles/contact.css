@@ -4,6 +4,10 @@
     --light-purple: #E8E7FF;
 }
 
+#contact {
+    background-color: var(--light-purple);
+}
+
 .form-size {
     width: 65vw; /* El form usará el 60% del ancho de la pantalla */
     margin: 0 auto; /* Centrar el formulario horizontalmente */
@@ -28,6 +32,7 @@
     width: 48%; /* Para inputs en .nombre-apellido y .email-telefono */
     margin-bottom: 10px;
     font-weight: bold;
+    background-color: transparent;
 }
 
 .field::placeholder {

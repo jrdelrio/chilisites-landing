@@ -2,9 +2,14 @@ import React from "react";
 import "../styles/contact.css";
 
 const Contact = () => {
+
+    const handleSubmit = (event) => {
+
+    }
+
   return (
-    <section className="text-center">
-      <h2 className="my-5 section-title">CONTÁCTANOS</h2>
+    <section id="contact" className="text-center py-4">
+      <h2 className="my-4 section-title">CONTÁCTANOS</h2>
       <form className="form-size">
         <div className="nombre-apellido">
           <input
@@ -39,7 +44,8 @@ const Contact = () => {
           name="message"
           placeholder="MENSAJE"
         ></textarea>
-        <button className="submit-button" type="submit">enviar</button>
+        <button className="submit-button" onClick={handleSubmit}>enviar</button>
+        {/* <span className="text-success ms-3">MENSAJE ENVIADO!</span> */}
       </form>
     </section>
   );

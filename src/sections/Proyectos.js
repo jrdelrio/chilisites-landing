@@ -69,7 +69,7 @@ const Proyectos = () => {
         ))}
       </div>
 
-      <div className="row mb-3 justify-content-center --bs-gutter-x-sm-0 w-100 max-width-sm-80vw mx-auto">
+      <div className="row justify-content-center --bs-gutter-x-sm-0 w-100 max-width-sm-80vw mx-auto pb-4">
         {quotes.map((quote) => (
           <CardQuote
             key={quote.id}
