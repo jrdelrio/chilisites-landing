@@ -1,0 +1,84 @@
+:root {
+    --blue: #4417DD;
+    --blue-dark: #240d74;
+    --light-purple: #E8E7FF;
+}
+
+.form-size {
+    width: 65vw; /* El form usará el 60% del ancho de la pantalla */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+    margin-bottom: 3rem;
+}
+
+.nombre-apellido,
+.email-telefono {
+    display: flex;
+    justify-content: space-between;
+}
+
+.double-field {
+    width: 100%; /* Asegura que el textarea ocupe todo el ancho del contenedor */
+}
+
+.field {
+    border: var(--blue-dark) 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    padding-left: 25px;
+    width: 48%; /* Para inputs en .nombre-apellido y .email-telefono */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.field::placeholder {
+    color: var(--blue-dark); /* Cambiar el color del placeholder */
+}
+
+textarea.field.double-field {
+    width: 100%; /* Asegura que el textarea ocupe todo el ancho disponible */
+    height: 150px; /* Altura del textarea, ajustable */
+}
+
+.submit-button {
+    background-color: var(--blue);
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 60%;
+    max-width: 400px;
+    font-size: 1.2rem;
+}
+
+
+/* Smartphones (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    .form-size {
+        width: 85vw; /* El form usará el 60% del ancho de la pantalla */
+    }
+
+    .field {
+        padding: 10px;
+        padding-left: 14px;
+        width: 48%; /* Para inputs en .nombre-apellido y .email-telefono */
+    }
+}
+
+
+/* Tablets (min-width: 576px) and (max-width: 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .field {
+        width: 49%; /* Para inputs en .nombre-apellido y .email-telefono */
+    }
+}
+
+
+/* Desktops (min-width: 992px) */
+@media (min-width: 992px) {
+    .field {
+        width: 49%; /* Para inputs en .nombre-apellido y .email-telefono */
+    }
+}
