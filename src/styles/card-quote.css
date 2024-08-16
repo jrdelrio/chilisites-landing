@@ -15,6 +15,10 @@
     margin: auto;
 }
 
+.quote-card img {
+    object-fit: contain;
+}
+
 .quote-text p {
     font-family: "Montserrat", sans-serif;
 }

@@ -2,6 +2,8 @@ import CardProyecto from "../components/CardProyecto";
 import CardQuote from "../components/CardQuote";
 import "../styles/proyectos.css";
 import "../styles/card-proyecto.css";
+import algeduc from "../img/algeduc.png";
+import angeladelrio from "../img/angeladelriopasteleria.png"
 
 
 const Proyectos = () => {
@@ -40,17 +42,17 @@ const Proyectos = () => {
   const quotes = [
     {
       id: 1,
-      image: imageDefault,
+      image: algeduc,
       quote:
-        "Hemos tenido muy buena experiencia con esta empresa. El servicio fue excelente y superó nuestras expectativas.",
-      empresa: "KADÓ REGALOS",
+        '"Hemos tenido muy buena experiencia con esta empresa. El servicio fue excelente y superó nuestras expectativas."',
+      empresa: "ALGEDUC",
     },
     {
       id: 2,
-      image: imageDefault,
+      image: angeladelrio,
       quote:
-        "Trabajar con esta empresa ha sido un placer. Son muy profesionales y cumplen con lo que prometen.",
-      empresa: "ALTER OFFICE",
+        '"Trabajar con esta empresa ha sido un placer. Son muy profesionales y cumplen con lo que prometen."',
+      empresa: "ANGELA DEL RIO PASTELERÍA",
     },
   ];
 
@@ -70,12 +72,10 @@ const Proyectos = () => {
       </div>
 
       <div className="row justify-content-center --bs-gutter-x-sm-0 w-100 max-width-sm-80vw mx-auto pb-4">
-        {quotes.map((quote) => (
+        {quotes.map((quote, index) => (
           <CardQuote
-            key={quote.id}
-            empresa={quote.empresa}
-            quote={quote.quote}
-            image={quote.image}
+            key={index}
+            quoteObj={quote}
           />
         ))}
       </div>
