@@ -66,8 +66,14 @@
 
 /* Tablets (min-width: 576px) and (max-width: 991.98px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
+
     .lalezar-regular {
         line-height: 50px;
+    }
+
+    .main-title {
+        font-size: 6rem;
+        line-height: 4.3rem;
     }
 
 }
@@ -76,6 +82,11 @@
 @media (min-width: 992px) {
     .titillium-web-semibold {
         font-size: 2.5rem;
+    }
+
+    .main-title {
+        font-size: 10rem;
+        line-height: 7rem;
     }
 
     .main-subtitle {

@@ -6,6 +6,7 @@ import algeduc from "../img/algeduc.png";
 import angeladelrio from "../img/angeladelriopasteleria.png"
 
 
+
 const Proyectos = () => {
   const imageDefault =
     "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-166706-546819.jpg&fm=jpg";
