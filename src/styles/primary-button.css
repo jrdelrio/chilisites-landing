@@ -13,6 +13,72 @@
     letter-spacing: 1px;
 }
 
+
+.primary-button-wrapper {
+    transform: translate(0, 0);
+}
+
+.primary-button-anchor {
+    display: block;
+    margin: auto;
+    width: 300px;
+    line-height: 46px;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+    font-size: 1.5rem;
+    font-family: arial;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    text-transform: uppercase;
+    transition: all .35s;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 1px;
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.primary-button-anchor:before,
+.primary-button-anchor:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background: var(--blue);
+    z-index: -1;
+    transition: all .35s;
+}
+
+.primary-button-anchor:before {
+    opacity: .5;
+}
+
+.primary-button-anchor:after {
+    transition-delay: .2s;
+}
+
+.primary-button-anchor:hover {
+    color: #fff;
+}
+
+.primary-button-anchor:hover:before,
+.primary-button-anchor:hover:after {
+    top: 0;
+}
+
+
+
+
+
+
+
 /* Smartphones (max-width: 575.98px) */
 @media (max-width: 575.98px) {
     .align-devices {
@@ -25,9 +91,22 @@
     .align-devices {
         text-align: center;
     }
+
+    .button-primary {
+        padding: 1.5rem 5rem;
+        border-radius: 40px;
+    }
 }
 
 /* Desktops (min-width: 992px) */
 @media (min-width: 992px) {
-    
+    .button-primary {
+        padding: 1.5rem 5rem;
+        border-radius: 40px;
+        font-size: 1.5rem;
+    }
+
+    .primary-button-anchor {
+        width: 400px;
+    }
 }

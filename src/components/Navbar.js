@@ -13,6 +13,11 @@ const Navbar = () => {
     }
   };
 
+  const styles = {
+    border: 'none',
+    background: 'none'
+  }
+
   return (
     <nav className="navbar navbar-expand-lg mx-lg-5 d-flex align-items-center">
       <div className="container-fluid">
@@ -66,13 +71,15 @@ const Navbar = () => {
             </ul>
             <div className="align-devices mt-3">
               <a href="#contact">
-                <button className="button-primary" type="button"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close">
-                  CONTÁCTANOS
+                <button
+                  type="button"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                  style={styles}
+                >
+                  <PrimaryButton title="contáctanos" />
                 </button>
               </a>
-
             </div>
           </div>
         </div>
