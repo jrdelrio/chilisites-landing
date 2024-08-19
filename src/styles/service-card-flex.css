@@ -1,0 +1,78 @@
+:root {
+    --blue: #4417DD;
+    --blue-dark: #240d74;
+    --light-purple: #E8E7FF
+}
+
+.service-card-image img {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border: none;
+    margin: auto;
+}
+
+.service-card-title {
+    font-family: "Lalezar", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--blue-dark);
+}
+
+.service-card-info {
+    font-family: "Montserrat", sans-serif;
+    color: var(--blue-dark);
+    font-weight: 500;
+    font-size: 1.1rem;
+
+}
+
+.service-card {
+    position: relative;
+}
+
+.service-card-text {
+    position: absolute;
+    z-index: 10;
+}
+
+/* Smartphones (max-width: 575.98px) */
+@media (max-width: 575.98px) {
+    .service-card {
+        margin-bottom: 50%;
+    }
+
+    .service-card-text {
+        left: 10%;
+    }
+
+    .service-card-info {
+        max-width: 90vw;
+    }
+}
+
+/* Tablets (min-width: 576px) and (max-width: 991.98px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .service-card-info {
+        font-size: 1rem;
+    }
+
+    .r2-c1,
+    .r2-c2,
+    .r2-c3 {
+        margin-top: 50px;
+    }
+}
+
+/* Desktops (min-width: 992px) */
+@media (min-width: 992px) {
+
+
+    #servicios .section-title {
+        font-size: 4.6rem;
+    }
+
+    .service-card-info {
+        font-size: 1.3rem;
+    }
+}

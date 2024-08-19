@@ -1,85 +1,109 @@
+import React, { useState } from "react";
+import ServiceCardFlex from "../components/ServiceCardFlex";
 import "../styles/services.css";
+import sem from "../img/services/SEM.png";
+import seo from "../img/services/SEO.png";
+import webDesign from "../img/services/diseño-web.png";
+import webDev from "../img/services/desarrollo-web.png";
 
 const Servicios = () => {
-    return (
-        <section id="servicios" className="text-center">
-            <h2 className="my-5 section-title nuestros-servicios-title">NUESTROS SERVICIOS</h2>
-            {/* <div className="services container">
-                <div className="row g-4">
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center shadow-sm">
-                            <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/04/herramientas-de-revision-de-codigo.png"
-                                alt="" srcset=""/>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="fake-service no-border">
-                            <h3 className="text-end">Diseño web</h3>
-                            <p className="text-end">Creamos maquetas y prototipos de tu sitio web</p>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center shadow-sm">
-                            <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/04/herramientas-de-revision-de-codigo.png"
-                                alt="" srcset=""/>
-                        </div>
-                    </div>
 
-                </div>
+    const [screenWidth] = useState(window.innerWidth);
 
-                <div className="row g-4">
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center no-border">
-                            <div className="top">
-                                <h3 className="text-start">Desarrollo web</h3>
-                                <p className="text-start">Desarrollamos tu sitio web, seas del rubro que seas</p>
-                            </div>
-                            <div className="bottom">
-                                <h3 className="text-end">SEO</h3>
-                                <p className="text-end">Creamos una estrategia SEO y la implementamos en tu sitio</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center shadow-sm">
-                            <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/04/herramientas-de-revision-de-codigo.png"
-                                alt="" srcset=""/>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center shadow-sm">
-                            <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2020/04/herramientas-de-revision-de-codigo.png"
-                                alt="" srcset=""/>
-                        </div>
-                    </div>
-                </div>
+    const servicios = [
+        {
+          img: webDev,
+          imgAlt: "Servicio de desarrollo web",
+          textAlign: "start",
+          textPosition: "bottom",
+          title: "Desarrollo Web",
+          description:
+            "Desarrollamos tu sitio web, seas del rubro que seas y con las tecnologías que más se adapten a tu empresa.",
+          gridClass: "r1-c1",
+        },
+        {gridClass: "r1-c2",},
+        {
+          img: webDesign,
+          imgAlt: "Servicio de diseño web",
+          textAlign: "end",
+          textPosition: "left-top",
+          title: "Diseño Web",
+          description:
+            "¿Tienes una idea? Creamos maquetas y prototipos de tu sitio web para luego desarrollarlo.",
+          gridClass: "r1-c3",
+        },
+        {gridClass: "r2-c1",},
+        {
+          img: seo,
+          imgAlt: "Servicio de consultoría SEO",
+          textAlign: "end",
+          textPosition: "left-bottom",
+          title: "SEO",
+          description:
+            "Optimizamos tu sitio web para que te encuentren en Google y otros motores de búsqueda.",
+          gridClass: "r2-c2",
+        },
+        {
+          img: sem,
+          imgAlt: "Servicio de campañas SEM",
+          textAlign: "end",
+          textPosition: "bottom",
+          title: "SEM",
+          description:
+            "Creamos y mantenemos campañas de Google Ads, ya sean de búsqueda, video, shopping o display.",
+          gridClass: "r2-c3",
+        },
+      ];
 
-                <div className="row g-4">
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-start no-border pos-top-end">
-                            <a href="http://">
-                                <button className="button-primary">
-                                    CONTÁCTANOS
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center no-border">
+    if (screenWidth >= 576) {
+        
+        return (
+            <section id="servicios" className="text-center">
+              <h2 className="my-5 section-title nuestros-servicios-title">
+                NUESTROS SERVICIOS
+              </h2>
+              <div className="grid-servicios">
+                {servicios.map((servicio, index) => (
+                  <div key={index} className={servicio.gridClass}>
+                    <ServiceCardFlex
+                      img={servicio.img}
+                      textAlign={servicio.textAlign}
+                      textPosition={servicio.textPosition}
+                      title={servicio.title}
+                      description={servicio.description}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+      }
 
-                        </div>
-                    </div>
-                    <div className="col-12 col-md-6 col-lg-4">
-                        <div className="card text-center no-border fake-service pos-top-end">
-                            <h3 className="text-end">SEM</h3>
-                            <p className="text-end">Creamos y mantenemos campañas de Google Ads</p>
-                        </div>
-                    </div>
-                </div>
+      else if (screenWidth < 576) {
+        return (
+            <section id="servicios" className="text-center">
+              <h2 className="my-5 section-title nuestros-servicios-title">
+                NUESTROS SERVICIOS
+              </h2>
+              <div>
+                {servicios.map((servicio, index) => (
+                  <div key={index}>
+                    <ServiceCardFlex
+                      img={servicio.img}
+                      textAlign='start'
+                      textPosition='bottom'
+                      title={servicio.title}
+                      description={servicio.description}
 
-            </div> */}
-        </section>
-    )
-}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+        )
+      }
 
-export default Servicios
+  
+};
+
+export default Servicios;

@@ -16,6 +16,8 @@
     padding-bottom: 1.5rem;
 }
 
+
+
 .form-size {
     width: 65vw; /* El form usará el 60% del ancho de la pantalla */
     margin: 0 auto; /* Centrar el formulario horizontalmente */
@@ -93,5 +95,9 @@ textarea.field.double-field {
 @media (min-width: 992px) {
     .field {
         width: 49%; /* Para inputs en .nombre-apellido y .email-telefono */
+    }
+
+    #contact .section-title {
+        font-size: 4.6rem;
     }
 }

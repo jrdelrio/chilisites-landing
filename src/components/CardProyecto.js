@@ -1,4 +1,4 @@
-import SecondaryButton from "./SecondaryButton";
+// import SecondaryButton from "./SecondaryButton";
 
 const CardProyecto = (props) => {
 
@@ -8,7 +8,7 @@ const CardProyecto = (props) => {
         <img className="img-proy-dest" src={props.image} alt="alt" />
         <h3 className="card-proyecto-title">{props.title}</h3>
         <p className="card-proyecto-descr">{props.description}</p>
-        <SecondaryButton />
+        {/* <SecondaryButton /> */}
       </div>
     </div>
   );

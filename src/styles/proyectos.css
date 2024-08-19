@@ -25,6 +25,11 @@
 
 /* Smartphones (max-width: 575.98px) */
 @media (max-width: 575.98px) {
+    .proyectos-destacados {
+        padding-top: 40px;
+        margin-top: -40px;
+    }
+
     .margin-x-10 {
         margin-left: 10% !important;
         margin-right: 10% !important;
@@ -69,6 +74,9 @@
 
     .max-width-sm-80vw {
         max-width: 80vw;
-        
+    }
+
+    #proyectos .section-title {
+        font-size: 4.6rem;
     }
 }
