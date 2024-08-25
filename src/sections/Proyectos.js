@@ -55,8 +55,49 @@ const Proyectos = () => {
         '"Trabajar con esta empresa ha sido un placer. Son muy profesionales y cumplen con lo que prometen."',
       empresa: "ANGELA DEL RIO PASTELERÍA",
     },
+    {
+      id: 3,
+      image: algeduc,
+      quote:
+        '"El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
+      empresa: "EMPRESA 3",
+    },
+    {
+      id: 4,
+      image: angeladelrio,
+      quote:
+        '"Gracias a su asesoría, hemos logrado mejorar significativamente nuestros procesos. Recomiendo sus servicios sin dudar."',
+      empresa: "EMPRESA 4",
+    },
+    {
+      id: 5,
+      image: algeduc,
+      quote:
+        '"La calidad del trabajo que entregan es excepcional. Nos han ayudado a alcanzar nuestros objetivos en tiempo récord."',
+      empresa: "EMPRESA 5",
+    },
+    {
+      id: 6,
+      image: angeladelrio,
+      quote:
+        '"Nos sorprendió gratamente la innovación que aportaron a nuestro proyecto. Son expertos en lo que hacen."',
+      empresa: "EMPRESA 6",
+    },
+    {
+      id: 7,
+      image: algeduc,
+      quote:
+        '"La creatividad y dedicación de su equipo nos permitió lanzar una campaña muy exitosa. Los recomendamos ampliamente."',
+      empresa: "EMPRESA 7",
+    },
+    {
+      id: 8,
+      image: angeladelrio,
+      quote:
+        '"Son unos verdaderos profesionales. Desde el primer contacto, demostraron compromiso y excelencia en su trabajo."',
+      empresa: "EMPRESA 8",
+    },
   ];
-
 
   return (
     <section id="proyectos" className="text-center proyectos-destacados">
@@ -72,13 +113,21 @@ const Proyectos = () => {
         ))}
       </div>
 
-      <div className="row justify-content-center --bs-gutter-x-sm-0 w-100 max-width-sm-80vw mx-auto pb-4">
+      <div className="--bs-gutter-x-sm-0 w-100 max-width-sm-80vw mx-auto slider">
+        <div className="track">
         {quotes.map((quote, index) => (
           <CardQuote
             key={index}
             quoteObj={quote}
           />
         ))}
+        {quotes.map((quote, index) => (
+          <CardQuote
+            key={index}
+            quoteObj={quote}
+          />
+        ))}
+        </div>
       </div>
     </section>
   );
