@@ -13,15 +13,19 @@ const ServiceCardFlex = (props) => {
   const locateText = (textPosition) => {
     switch (textPosition) {
       case "left-top":
-        // if () {}
-        return { top: "0", right: "110%" };
+        if (tablet) {
+          return { top: "5%", right: "110%" };
+        }
+        else if (desktop){
+          return { top: "5%", right: "95%" };
+        }
 
       case "left-bottom":
         if (textAlign === "end") {
           if (desktop) {
-            return { top: "50%", right: "110%" };
+            return { top: "40%", right: "95%" };
           } else if (tablet) {
-            return { top: "30%", right: "115%" };
+            return { top: "55%", right: "115%" };
           }
         }
         break; // Asegúrate de agregar un break para evitar que continúe ejecutando otros casos
@@ -29,13 +33,13 @@ const ServiceCardFlex = (props) => {
       case "bottom":
         if (textAlign === "end") {
           if (desktop) {
-            return { right: "6%" };
+            return { right: "15%", top: "80%" };
           } else {
             return { right: "6%", top: "115%" };
           }
         } else if (textAlign === "start") {
           if (desktop) {
-            return { left: "5%" };
+            return { left: "12%", top: "82%" };
           } else if (tablet) {
             return { left: "0%", top: "110%" };
           } else if (mobile) {

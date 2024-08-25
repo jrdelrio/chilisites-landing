@@ -1,7 +1,8 @@
 :root {
     --blue: #4417DD;
     --blue-dark: #240d74;
-    --light-purple: #E8E7FF
+    --light-purple: #E8E7FF;
+    --light-grey: #5a616d
 }
 
 .service-card-image img {
@@ -39,7 +40,10 @@
 /* Smartphones (max-width: 575.98px) */
 @media (max-width: 575.98px) {
     .service-card {
-        margin-bottom: 50%;
+        margin-bottom: 45%;
+        max-width: 85vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service-card-text {
@@ -62,6 +66,14 @@
     .r2-c3 {
         margin-top: 50px;
     }
+
+    .service-card-info {
+        font-size: .8rem;
+    }
+
+    .service-card-title {
+        margin-bottom: 0;
+    }
 }
 
 /* Desktops (min-width: 992px) */
@@ -72,7 +84,13 @@
         font-size: 4.6rem;
     }
 
+    .service-card-image img {
+        width: 75%;
+        aspect-ratio: 1 / 1;
+        height: auto;
+    }
+
     .service-card-info {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 }

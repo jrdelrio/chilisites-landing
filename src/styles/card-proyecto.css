@@ -33,7 +33,6 @@
 
 .proy-dest-card h3 {
     padding-top: 1.5rem;
-    padding-bottom: 0.4rem;
     color: var(--blue-dark)
 }
 
@@ -66,7 +65,17 @@
         /* Altura de cada línea */
         max-height: 4.5em;
         /* Asegura que no exceda 3 líneas */
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;;
+    }
+
+    .proy-dest-card {
+        width: 40vw;
+        margin: auto;
+    }
+
+    .proy-dest-card h3 {
+        padding-top: 1.3rem;
+        padding-bottom: 0;
     }
 }
 

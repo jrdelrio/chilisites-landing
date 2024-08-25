@@ -2,14 +2,14 @@ import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import logo from "../img/logo-chilisites.png";
 import "../styles/navbar.css";
-import { Offcanvas } from "bootstrap"; // Importa Bootstrap para manejar el offcanvas
+import { Offcanvas } from "bootstrap";
 
 const Navbar = () => {
   const handleClick = () => {
     const offcanvasElement = document.getElementById("offcanvasNavbar");
     const offcanvasInstance = Offcanvas.getInstance(offcanvasElement);
     if (offcanvasInstance) {
-      offcanvasInstance.hide(); // Cierra el offcanvas
+      offcanvasInstance.hide();
     }
   };
 
@@ -41,9 +41,9 @@ const Navbar = () => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+            {/* <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
               Offcanvas
-            </h5>
+            </h5> */}
             <button
               type="button"
               className="btn-close"
@@ -54,7 +54,7 @@ const Navbar = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3 align-items-center">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="#servicios">
+                <a className="nav-link" aria-current="page" href="#servicios" aria-label="Close">
                   SERVICIOS
                 </a>
               </li>
@@ -68,19 +68,25 @@ const Navbar = () => {
                   SOBRE NOSOTROS
                 </a>
               </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#contact">
+                  CONTÁCTANOS
+                </a>
+              </li>
             </ul>
-            <div className="align-devices mt-3">
+            {/* <div className="align-devices mt-3">
               <a href="#contact">
                 <button
                   type="button"
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
                   style={styles}
+                  onClick={handleClick}
                 >
                   <PrimaryButton title="contáctanos" />
                 </button>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .navbar {
-    padding: 0.5rem 1rem;
-    margin: 1rem;
+    padding: 0rem 1rem;
+    margin: 0;
 }
 
 .navbar-logo {
@@ -41,11 +41,11 @@
 
 /* Desktops (min-width: 992px) */
 @media (min-width: 992px) {
-    .navbar {
-        margin: 0.4rem 0.5rem 4rem 0.5rem;
+    nav.navbar {
+        margin: 0rem 8vw 3rem 8vw !important;
     }
 
     .navbar-logo {
-        height: 100px;
+        height: 80px;
     }
 }
