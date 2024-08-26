@@ -4,33 +4,7 @@
     --light-purple: #E8E7FF
 }
 
-/*cards proyecto destacado*/
-.proy-dest-card-2 {
-    background-color: white;
-    border: none !important;
-    border-radius: 15px !important;
-    margin: 10px;
-    width: auto;
-    height: 0;
-    padding-top: 33.33%;
-    /* This creates a height based on 1:3 ratio */
-    position: relative;
-    overflow: hidden;
-}
-
-.img-proy-dest {
-    width: 100%;
-    /* La imagen ocupará todo el ancho del contenedor */
-    height: auto;
-    /* Mantén el aspecto de la imagen al cambiar el ancho */
-    aspect-ratio: 1 / 1;
-    /* Asegura que la imagen sea cuadrada */
-    object-fit: cover;
-    /* Cubre el área del contenedor, recortando si es necesario */
-    border-radius: 15px;
-    /* Si quieres bordes redondeados */
-}
-
+/*hover zoom */
 .proy-dest-card h3 {
     padding-top: 1.5rem;
     color: var(--blue-dark)
@@ -47,6 +21,26 @@
     font-family: "Montserrat", sans-serif;
     color: var(--blue-dark);
 }
+
+/*zoom effect*/
+.zoom-wrapper {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.img-proy-dest {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    transition: transform 0.8s;
+    height: 100%;
+}
+
+.zoom-wrapper:hover .img-proy-dest {
+    transform: scale(1.2);
+}
+
 
 /* Smartphones (max-width: 575.98px) */
 @media (max-width: 575.98px) {}
