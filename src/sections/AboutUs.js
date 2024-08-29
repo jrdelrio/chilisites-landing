@@ -95,9 +95,9 @@ const AboutUs = () => {
         <div className="about-us-title">
           <h2 className="section-title">sobre nosotros</h2>
         </div>
-        <div className="about-us-img">
+        {/* <div className="about-us-img">
           <img src={url} alt="Sobre Nosotros" />
-        </div>
+        </div> */}
         <div className="about-us-body">
           <p>
             Somos una pequeña agencia de Marketing Digital dedicada a ayudar a
@@ -112,7 +112,7 @@ const AboutUs = () => {
             Nos esforzamos en ayudarte a entender cómo funciona tu sitio y
             campañas en base a métricas.
           </p>
-          <div className="mt-4">
+          <div className="mt-5">
             <PrimaryButton title="CONTÁCTANOS" />
           </div>
         </div>

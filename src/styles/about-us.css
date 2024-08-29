@@ -4,6 +4,11 @@
     --light-purple: #E8E7FF
 }
 
+#about-us {
+    background-image: url("../img/background-image-logo.png");
+    background-repeat: no-repeat;
+}
+
 .section-title {
     font-size: 3.5rem;
     color: var(--blue-dark);
@@ -50,7 +55,7 @@
 
 /* smartphones */
 @media (max-width: 575.98px) {
-    #about-us {
+    #about-us .container {
         margin: 50px 8% 50px 8%;
     }
 
@@ -61,6 +66,7 @@
     .about-us-title {
         display: flex;
         align-items: flex-start;
+        margin-bottom: 30px;
     }
 
     .about-us-title .section-title {
@@ -89,6 +95,8 @@
         text-align: center;
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
+        margin-right: 15px;
+        margin-left: 15px;
     }
 
     .technologies {
@@ -113,8 +121,8 @@
 
 /* tablets */
 @media (min-width: 576px) and (max-width: 991.98px) {
-    #about-us {
-        margin: 50px 8% 50px 8%;
+    #about-us .container {
+        margin: 50px 10% 50px 10%;
     }
 
     .about-us-container {
@@ -149,6 +157,8 @@
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
         margin-top: 20px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
 
     .technologies {
@@ -173,7 +183,7 @@
 
 /*computador*/
 @media (min-width: 992px) {
-    #about-us {
+    #about-us .container {
         margin: 50px 8% 50px 8%;
     }
 
@@ -184,10 +194,12 @@
     .about-us-title {
         display: flex;
         align-items: flex-end;
+        margin-left: 8%;
+        align-self: self-end;
     }
 
     .about-us-title .section-title {
-        font-size: 5.2rem;
+        font-size: 4.3rem;
         color: var(--blue-dark);
         text-transform: uppercase;
         line-height: 0.9;
@@ -208,6 +220,7 @@
 
     .about-us-body {
         margin-left: 2.3rem;
+        margin-right: 1.9rem;
     }
 
     .about-us-body:nth-child(3) {
@@ -215,8 +228,9 @@
     }
 
     .about-us-body p {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
+        margin-bottom: 1.6rem;
     }
 
     .technologies .section-title {

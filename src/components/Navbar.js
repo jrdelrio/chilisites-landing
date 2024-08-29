@@ -41,9 +41,6 @@ const Navbar = () => {
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div className="offcanvas-header">
-            {/* <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Offcanvas
-            </h5> */}
             <button
               type="button"
               className="btn-close"
@@ -74,19 +71,6 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            {/* <div className="align-devices mt-3">
-              <a href="#contact">
-                <button
-                  type="button"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                  style={styles}
-                  onClick={handleClick}
-                >
-                  <PrimaryButton title="contáctanos" />
-                </button>
-              </a>
-            </div> */}
           </div>
         </div>
       </div>

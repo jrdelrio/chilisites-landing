@@ -16,8 +16,6 @@
     padding-bottom: 1.5rem;
 }
 
-
-
 .form-size {
     width: 65vw; /* El form usará el 60% del ancho de la pantalla */
     margin: 0 auto; /* Centrar el formulario horizontalmente */
@@ -66,6 +64,13 @@ textarea.field.double-field {
     width: 60%;
     max-width: 400px;
     font-size: 1.2rem;
+}
+
+/*color para cuando se está escribiendo*/
+form .nombre-apellido *:focus-visible,
+form .email-telefono *:focus-visible,
+form textarea.double-field:focus-visible {
+    outline: none;
 }
 
 

@@ -3,7 +3,7 @@
 }
 
 .section-title {
-    font-size: 2.1rem;
+    font-size: 3.5rem;
     color: var(--blue-dark);
     line-height: 2.5rem;
 }
@@ -42,7 +42,7 @@
 /* Desktops (min-width: 992px) */
 @media (min-width: 992px) {
     #servicios .section-title {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .grid-servicios {
