@@ -1,108 +1,173 @@
 :root {
-    --blue: #4417DD;
-    --blue-dark: #240d74;
-    --light-purple: #E8E7FF;
+	--blue: #4417DD;
+	--blue-dark: #240d74;
+	--light-purple: #E8E7FF;
+	--white: #f8f8ff;
+	--input-padding: 0.5rem;
+	--input-border-radius: 0.5rem;
+	--input-border-width: 1.5px;
 }
 
 #contact {
-    background-image: linear-gradient(
-        to bottom,
-        white 0%,       /* Empieza en blanco en la parte superior */
-        var(--light-purple) 5%,      /* Mantén blanco hasta el 20% de la altura */
-        var(--light-purple) 50%,       /* Cambia a aqua en el 50% de la altura */
-        var(--light-purple) 100%      /* Cambia de nuevo a blanco en el 80% */
-    );
-    padding-top: 60px;
-    padding-bottom: 1.5rem;
+	background-color: #fff;
+	border-radius: 8px;
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom,
+		white 0%, 
+		var(--light-purple) 5%, 
+		var(--light-purple) 100%
+	);
+	padding-top: 60px;
+	padding-bottom: 2.5rem;
 }
 
-.form-size {
-    width: 65vw; /* El form usará el 60% del ancho de la pantalla */
-    margin: 0 auto; /* Centrar el formulario horizontalmente */
-    margin-bottom: 3rem;
+/* grid */
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	max-width: 700px;
+	margin: auto;
+	justify-items: center;
+    column-gap: 10px;
 }
 
-.nombre-apellido,
-.email-telefono {
+.grid-item,
+.comment {
+	padding: 2px;
+	text-align: center; /* Centrar el contenido */
+	width: 100%;
+}
+
+.grid-container .comment {
+	grid-column: span 2 / span 2;
+	width: 100%;
+    grid-row: span 2 / span 2;;
+}
+
+/* estilo */
+.input__wrapper {
+	position: relative;
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Centra verticalmente el contenido */
+    width: 100%;
+    height: 100%;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
-.double-field {
-    width: 100%; /* Asegura que el textarea ocupe todo el ancho del contenedor */
+.input__wrapper.grid-item.full-width {
+	margin-top: 10px;
 }
 
-.field {
-    border: var(--blue-dark) 2px solid;
-    border-radius: 10px;
-    padding: 15px;
-    padding-left: 25px;
-    width: 48%; /* Para inputs en .nombre-apellido y .email-telefono */
-    margin-bottom: 10px;
-    font-weight: bold;
+.input__field {
+	border: var(--input-border-width) solid var(--blue-dark);
+	font-size: 1.4rem;
+	border-radius: var(--input-border-radius);
+	color: var(--blue-dark);
+	padding: var(--input-padding);
+	padding-right: 2rem;
+	background: transparent;
+	transition: border-color 0.2s;
+	width: 100%;
+	height: 60px;
+}
+
+.input__field.textarea {
+    height: 125px;
+}
+
+.input__field::placeholder {
+	color: transparent;
+}
+
+/* .input__field.textarea {
+    height: 200px;
+} */
+
+.input__field:placeholder-shown ~ .input__label {
+	font-size: 1.4rem;
+	cursor: text;
+	color: var(--blue-dark);
+	top: 1rem;
+	left: 5%;
+}
+
+.comment-label {
+	left: 1rem !important;
+}
+
+.input__label,
+.input__field:focus ~ .input__label {
+	position: absolute;
+	top: -5px;
+	padding: 0 0.25rem;
+	background-color: var(--light-purple);
+	font-size: 1rem;
+	left: 1rem;
+	color: var(--blue-dark);
+	pointer-events: none;
+	transition: 0.3s;
+}
+
+.input__field:focus ~ .input__label {
+	color: var(--blue-dark);
+}
+
+.input__field:focus {
+	border-color: var(--blue-dark);
+	outline: 1px solid var(--blue-dark);
+}
+
+.input__icon {
+	position: absolute;
+	right: -0.625rem;
+	bottom: -0.625rem;
+	width: 1.75rem;
+	height: 1.75rem;
+	stroke: var(--blue-dark);
+	stroke-width: 1.5px;
+	transform: translate(-50%, -50%);
+	transform-origin: center;
+	cursor: pointer;
+}
+
+.input__field:focus ~ .input__icon {
+	stroke: #ff9950;
+}
+
+.submit-button{
     background-color: transparent;
-}
-
-.field::placeholder {
-    color: var(--blue-dark); /* Cambiar el color del placeholder */
-}
-
-textarea.field.double-field {
-    width: 100%; /* Asegura que el textarea ocupe todo el ancho disponible */
-    height: 150px; /* Altura del textarea, ajustable */
-}
-
-.submit-button {
-    background-color: var(--blue-dark);
+    border: 2px solid transparent;
     color: white;
-    padding: 20px 25px;
-    border: none;
-    border-radius: 20px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    width: 60%;
-    max-width: 400px;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    background-color: var(--blue-dark);
+    border-radius: 40px;
+    padding: 15px 50px;
+    width: 300px;
+    margin-top: 20px;
 }
 
-/*color para cuando se está escribiendo*/
-form .nombre-apellido *:focus-visible,
-form .email-telefono *:focus-visible,
-form textarea.double-field:focus-visible {
-    outline: none;
+.submit-button:hover {
+    border: 2px solid var(--blue-dark);
+    background-color: transparent;
+    color: var(--blue-dark);
+    font-weight: bold;
 }
 
 
-/* Smartphones (max-width: 575.98px) */
+
+/* Media query para smartphones */
 @media (max-width: 575.98px) {
-    .form-size {
-        width: 85vw; /* El form usará el 60% del ancho de la pantalla */
-    }
+	.grid-container {
+		grid-template-columns: 1fr; /* Cambia a una sola columna */
+		grid-template-rows: repeat(5, auto); /* Crea una fila por cada hijo */
+		margin-right: 5%;
+		margin-left: 5%;
+	}
 
-    .field {
-        padding: 10px;
-        padding-left: 14px;
-        width: 48%; /* Para inputs en .nombre-apellido y .email-telefono */
-    }
-}
-
-
-/* Tablets (min-width: 576px) and (max-width: 991.98px) */
-@media (min-width: 576px) and (max-width: 991.98px) {
-    .field {
-        width: 49%; /* Para inputs en .nombre-apellido y .email-telefono */
-    }
-}
-
-
-/* Desktops (min-width: 992px) */
-@media (min-width: 992px) {
-    .field {
-        width: 49%; /* Para inputs en .nombre-apellido y .email-telefono */
-    }
-
-    #contact .section-title {
-        font-size: 4.6rem;
-    }
+	.grid-item {
+		grid-column: span 2; /* Asegura que la quinta div ocupe una columna */
+	}
 }

@@ -121,7 +121,7 @@ const AboutUs = () => {
         <h2 className="section-title text-start">tecnologias</h2>
         <div className="tech-icons">
           {technologies.map((tech, index) => (
-            <img src={tech.src} alt={tech.alt} title={tech.title} />
+            <img key={index} src={tech.src} alt={tech.alt} title={tech.title} />
           ))}
         </div>
       </div>

@@ -104,7 +104,7 @@
     }
 
     .technologies .section-title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         margin-bottom: 1rem;
     }
 
@@ -166,7 +166,7 @@
     }
 
     .technologies .section-title {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .tech-icons {
@@ -231,6 +231,10 @@
         font-size: 1.5rem;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 1.6rem;
+    }
+
+    .technologies {
+        margin-left: 30px;
     }
 
     .technologies .section-title {
