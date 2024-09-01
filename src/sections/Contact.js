@@ -59,7 +59,7 @@ const Contact = () => {
 						<label htmlFor="form-comment" className="input__label comment-label">Mensaje</label>
 					</div>
 				</div>
-				<input type="submit" className="submit-button" value='Enviar'/>
+				<input type="submit" className="submit-button" value='Enviar' onClick={handleSubmit}/>
 			</form>
 		</section>
 		);
