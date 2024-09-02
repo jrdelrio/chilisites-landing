@@ -1,20 +1,10 @@
-.navbar {
-    padding: 0rem 1rem;
-    margin: 0;
-}
 
-.navbar-logo {
-    height: 82px;
-}
 
-.nav-item {
-    font-weight: bold;
+.nav-link{
+    font-weight: bold !important;
     margin-right: 40px;
     margin-left: 40px;
-}
-
-.nav-item a {
-    color: var(--blue-dark);
+    color: var(--blue-dark) !important;
 }
 
 /* Smartphones (max-width: 575.98px) */
@@ -26,6 +16,10 @@
     .navbar-logo {
         height: 60px;
     }
+
+    .navbar-nav a {
+        align-self: center;
+    }
 }
 
 /* Tablets (min-width: 576px) and (max-width: 991.98px) */
@@ -36,6 +30,14 @@
 
     .navbar-logo {
         height: 80px;
+    }
+
+    .navbar > .container {
+        justify-content: space-between;
+    }
+
+    .navbar-nav a {
+        align-self: center;
     }
 }
 
