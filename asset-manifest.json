@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bb5614cb.css",
+    "main.js": "/static/js/main.f732428e.js",
+    "static/js/453.fabb2db5.chunk.js": "/static/js/453.fabb2db5.chunk.js",
+    "static/media/SEM.png": "/static/media/SEM.38e2d8e429fd7c21413a.png",
+    "static/media/diseño-web.png": "/static/media/diseño-web.8740f002ede586dff70d.png",
+    "static/media/woocommerce.png": "/static/media/woocommerce.1c6064c464807f374980.png",
+    "static/media/desarrollo-web.png": "/static/media/desarrollo-web.0abcd85b5583a25c3d2e.png",
+    "static/media/adwords.png": "/static/media/adwords.1b130a7fcad83288832d.png",
+    "static/media/shopify.png": "/static/media/shopify.070f69c8bc0e31b0f258.png",
+    "static/media/SEO.png": "/static/media/SEO.757ad0198ed1ab0f6286.png",
+    "static/media/angeladelriopasteleria.png": "/static/media/angeladelriopasteleria.468fe69bcd6d957dcbf3.png",
+    "static/media/wordpress.png": "/static/media/wordpress.11ed091523e3152b651f.png",
+    "static/media/background-image-logo.png": "/static/media/background-image-logo.cc7ff091aba819d51be9.png",
+    "static/media/html-5.png": "/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
+    "static/media/elementor.png": "/static/media/elementor.52fc8d63ece30afdb34a.png",
+    "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "index.html": "/index.html",
+    "main.bb5614cb.css.map": "/static/css/main.bb5614cb.css.map",
+    "main.f732428e.js.map": "/static/js/main.f732428e.js.map",
+    "453.fabb2db5.chunk.js.map": "/static/js/453.fabb2db5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb5614cb.css",
+    "static/js/main.f732428e.js"
+  ]
+}
