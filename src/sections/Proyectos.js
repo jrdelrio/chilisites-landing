@@ -2,9 +2,16 @@ import CardProyecto from "../components/CardProyecto";
 import CardQuote from "../components/CardQuote";
 import "../styles/proyectos.css";
 import "../styles/card-proyecto.css";
-import algeduc from "../img/algeduc.png";
-import angeladelrio from "../img/angeladelriopasteleria.png"
 
+// fotos
+import algeduc from "../img/algeduc.png";
+import angeladelrio from "../img/angeladelriopasteleria.png";
+import kado from "../img/kado.png";
+import sieteTintas from "../img/sieteTintas.png";
+import meydey from "../img/meydey.png";
+import alterOffice from "../img/alterOffice.png";
+import dodo from "../img/dodo.png";
+import decima from "../img/decimaPropiedades.png";
 
 
 const Proyectos = () => {
@@ -57,45 +64,45 @@ const Proyectos = () => {
     },
     {
       id: 3,
-      image: algeduc,
+      image: kado,
       quote:
         '"El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
-      empresa: "EMPRESA 3",
+      empresa: "KADÓ REGALOS",
     },
     {
       id: 4,
-      image: angeladelrio,
+      image: sieteTintas,
       quote:
         '"Gracias a su asesoría, hemos logrado mejorar significativamente nuestros procesos. Recomiendo sus servicios sin dudar."',
-      empresa: "EMPRESA 4",
+      empresa: "SIETE TINTAS",
     },
     {
       id: 5,
-      image: algeduc,
+      image: alterOffice,
       quote:
         '"La calidad del trabajo que entregan es excepcional. Nos han ayudado a alcanzar nuestros objetivos en tiempo récord."',
-      empresa: "EMPRESA 5",
+      empresa: "ALTER OFFICE",
     },
     {
       id: 6,
-      image: angeladelrio,
+      image: meydey,
       quote:
         '"Nos sorprendió gratamente la innovación que aportaron a nuestro proyecto. Son expertos en lo que hacen."',
-      empresa: "EMPRESA 6",
+      empresa: "MEY DEY",
     },
     {
       id: 7,
-      image: algeduc,
+      image: dodo,
       quote:
         '"La creatividad y dedicación de su equipo nos permitió lanzar una campaña muy exitosa. Los recomendamos ampliamente."',
-      empresa: "EMPRESA 7",
+      empresa: "DODO",
     },
     {
       id: 8,
-      image: angeladelrio,
+      image: decima,
       quote:
         '"Son unos verdaderos profesionales. Desde el primer contacto, demostraron compromiso y excelencia en su trabajo."',
-      empresa: "EMPRESA 8",
+      empresa: "DÉCIMA PROPIEDADES",
     },
   ];
 
