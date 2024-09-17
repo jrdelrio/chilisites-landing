@@ -64,6 +64,8 @@ const Contact = () => {
                             required
                             className="input__field field single-field"
                             name="name"
+                            value={formData.name}
+                            onChange={handleChange}
                         />
                         <label htmlFor="form-name" className="input__label">
                             Nombre
@@ -77,6 +79,8 @@ const Contact = () => {
                             required
                             className="input__field field single-field"
                             name="lastname"
+                            value={formData.lastname}
+                            onChange={handleChange}
                         />
                         <label htmlFor="form-lastname" className="input__label">
                             Apellido
@@ -90,6 +94,8 @@ const Contact = () => {
                             required
                             className="input__field field single-field"
                             name="email"
+                            value={formData.email}
+                            onChange={handleChange}
                         />
                         <label htmlFor="form-email" className="input__label">
                             Email
@@ -103,6 +109,8 @@ const Contact = () => {
                             required
                             className="input__field field single-field"
                             name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
                         />
                         <label htmlFor="form-phone" className="input__label">
                             Teléfono
@@ -115,6 +123,8 @@ const Contact = () => {
                             required
                             className="input__field textarea"
                             name="comment"
+                            value={formData.comment}
+                            onChange={handleChange}
                         ></textarea>
                         <label
                             htmlFor="form-comment"
