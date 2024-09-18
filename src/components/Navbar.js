@@ -8,11 +8,6 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavbarComp = () => {
 
-  const styles = {
-    border: "none",
-    background: "none",
-  };
-
   return (
     <Navbar
       expand="lg"
@@ -25,10 +20,10 @@ const NavbarComp = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="#servicios" className="nav-item">SERVICIOS</Nav.Link>
-            <Nav.Link href="#proyectos" className="nav-item">PROYECTOS</Nav.Link>
-            <Nav.Link href="#about-us" className="nav-item">SOBRE NOSOTROS</Nav.Link>
-            <Nav.Link href="#contact" className="nav-item">CONTÁCTANOS</Nav.Link>
+            <Nav.Link href="#servicios" className="nav-item header-nav-item">SERVICIOS</Nav.Link>
+            <Nav.Link href="#proyectos" className="nav-item header-nav-item">PROYECTOS</Nav.Link>
+            <Nav.Link href="#about-us" className="nav-item header-nav-item">SOBRE NOSOTROS</Nav.Link>
+            <Nav.Link href="#contact" className="nav-item header-nav-item">CONTÁCTANOS</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

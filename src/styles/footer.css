@@ -12,6 +12,25 @@ footer {
     padding: 0;
 }
 
+li.nav-item a.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 16px;
+    bottom: 3px;
+    background-color: #fff;
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 55%;
+}
+
 /* Elimina el padding lateral de la clase container */
 .container {
     max-width: 100% !important;

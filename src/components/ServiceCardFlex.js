@@ -1,52 +1,52 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/service-card-flex.css";
 
 const ServiceCardFlex = (props) => {
-  const [textPosition] = useState(props.textPosition);
-  const [textAlign] = useState(props.textAlign);
-  const [screenWidth] = useState(window.innerWidth);
+  const { textPosition, textAlign, img, imgAlt, title, description } = props;
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  // Actualiza el ancho de pantalla al cambiar el tamaño de la ventana
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const mobile = screenWidth <= 575.98;
-  const tablet = 575.98 < screenWidth && screenWidth < 991.98;
-  const desktop = 991.98 <= screenWidth;
+  const tablet = screenWidth > 575.98 && screenWidth < 991.98;
+  const desktop = screenWidth >= 991.98;
 
-  const locateText = (textPosition) => {
+  const locateText = () => {
     switch (textPosition) {
       case "left-top":
-        if (tablet) {
-          return { top: "5%", right: "110%" };
-        }
-        else if (desktop){
-          return { top: "5%", right: "95%" };
-        }
+        return desktop
+          ? { top: "5%", right: "95%" }
+          : tablet
+          ? { top: "5%", right: "110%" }
+          : {};
 
       case "left-bottom":
-        if (textAlign === "end") {
-          if (desktop) {
-            return { top: "40%", right: "95%" };
-          } else if (tablet) {
-            return { top: "55%", right: "115%" };
-          }
-        }
-        break; // Asegúrate de agregar un break para evitar que continúe ejecutando otros casos
+        return textAlign === "end"
+          ? desktop
+            ? { top: "40%", right: "95%" }
+            : tablet
+            ? { top: "55%", right: "115%" }
+            : {}
+          : {};
 
       case "bottom":
-        if (textAlign === "end") {
-          if (desktop) {
-            return { right: "15%", top: "80%" };
-          } else {
-            return { right: "6%", top: "115%" };
-          }
-        } else if (textAlign === "start") {
-          if (desktop) {
-            return { left: "12%", top: "82%" };
-          } else if (tablet) {
-            return { left: "0%", top: "110%" };
-          } else if (mobile) {
-            return { left: "6%", top: "108%" };
-          }
-        }
-        break;
+        return textAlign === "end"
+          ? desktop
+            ? { right: "15%", top: "80%" }
+            : { right: "6%", top: "115%" }
+          : textAlign === "start"
+          ? desktop
+            ? { left: "12%", top: "82%" }
+            : tablet
+            ? { left: "0%", top: "110%" }
+            : { left: "6%", top: "108%" }
+          : {};
 
       default:
         return {};
@@ -55,34 +55,36 @@ const ServiceCardFlex = (props) => {
 
   const styles = {
     img: {
-      display: props.img ? "block" : "none",
+      display: img ? "block" : "none",
+      zIndex: 10,
     },
     title: {
       textAlign: textAlign,
-      paddingLeft: textAlign === "start" ? "0" : "0",
-      paddingRight: textAlign === "end" ? "0" : "0",
       height: "1.8rem",
+      zIndex: 1,
     },
     description: {
       textAlign: textAlign,
-      paddingLeft: textAlign === "start" ? "0" : "",
-      paddingRight: textAlign === "end" ? "0" : "0",
       lineHeight: screenWidth < 992 ? "1.2rem" : "",
+      zIndex: 1,
     },
-    text: locateText(textPosition),
+    text: {
+      ...locateText(),
+      display: img ? "block" : "none",
+    },
   };
 
   return (
     <div className="service-card">
       <div className="service-card-image">
-        <img src={props.img} style={styles.img} alt={props.imgAlt} />
+        <img src={img} style={styles.img} alt={imgAlt} />
       </div>
       <div className="service-card-text" style={styles.text}>
         <h3 className="service-card-title" style={styles.title}>
-          {props.title}
+          {title}
         </h3>
         <p className="service-card-info" style={styles.description}>
-          {props.description}
+          {description}
         </p>
       </div>
     </div>

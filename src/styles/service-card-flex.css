@@ -11,6 +11,12 @@
     height: auto;
     border: none;
     margin: auto;
+    scale: 1;
+}
+
+.service-card-image img:hover {
+    scale: 1.05;
+    transition: scale .3s ease-in-out;
 }
 
 .service-card-title {
