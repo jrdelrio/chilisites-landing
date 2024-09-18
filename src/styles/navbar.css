@@ -1,10 +1,28 @@
+:root {
+    --color-header-link-hover: #4417DD
+}
 
-
-.nav-link{
+.nav-link {
     font-weight: bold !important;
     margin-right: 40px;
     margin-left: 40px;
     color: var(--blue-dark) !important;
+    position: relative;
+}
+
+.header-nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 8px !important;
+    bottom: 3px;
+    background-color: var(--blue-dark) !important;
+    transition: width 0.4s ease;
+}
+
+.header-nav-item:hover::after {
+    width: 85% !important;
 }
 
 /* Smartphones (max-width: 575.98px) */
@@ -32,7 +50,7 @@
         height: 80px;
     }
 
-    .navbar > .container {
+    .navbar>.container {
         justify-content: space-between;
     }
 

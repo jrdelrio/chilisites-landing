@@ -95,9 +95,6 @@ const AboutUs = () => {
         <div className="about-us-title">
           <h2 className="section-title">sobre nosotros</h2>
         </div>
-        {/* <div className="about-us-img">
-          <img src={url} alt="Sobre Nosotros" />
-        </div> */}
         <div className="about-us-body">
           <p>
             Somos una pequeña agencia de Marketing Digital dedicada a ayudar a
@@ -118,7 +115,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="technologies pt-5">
-        <h2 className="section-title text-start">tecnologias</h2>
+        <h2 className="section-title text-center">tecnologias</h2>
         <div className="tech-icons">
           {technologies.map((tech, index) => (
             <img key={index} src={tech.src} alt={tech.alt} title={tech.title} />

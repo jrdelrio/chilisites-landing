@@ -53,6 +53,10 @@
     list-style: none
 }
 
+.tech-icons {
+    text-align: center;
+}
+
 /* smartphones */
 @media (max-width: 575.98px) {
     #about-us .container {
@@ -115,7 +119,7 @@
     }
 
     .tech-icons {
-        text-align: -webkit-center;
+        text-align: center;
     }
 }
 
