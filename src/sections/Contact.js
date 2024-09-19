@@ -16,7 +16,7 @@ const Contact = () => {
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
-        console.log(formData)
+        console.log(formData);
     };
 
     const handleSubmit = (event) => {
@@ -35,14 +35,7 @@ const Contact = () => {
         const TEMPLATE_ID = "template_vnn45sc";
         const USER_ID = "-yxxv8md0PULJcOgX";
 
-        emailjs
-            .send(
-                SERVICE_ID, 
-                TEMPLATE_ID, 
-                templateParams, 
-                USER_ID
-            )
-                .then(
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
             (result) => {
                 alert("Correo enviado correctamente!");
                 setFormData({
@@ -57,6 +50,37 @@ const Contact = () => {
                 alert("Ocurrió un error al enviar el correo.");
             }
         );
+
+        //email de confirmación
+        const confirmationTemplateParams = {
+            from_name: formData.name,
+            from_lastname: formData.lastname,
+            from_email: formData.email,
+        };
+
+        const TEMPLATE_CONFIRM_ID = "template_bxnur57";
+
+        emailjs
+            .send(
+                SERVICE_ID,
+                TEMPLATE_CONFIRM_ID,
+                confirmationTemplateParams,
+                USER_ID
+            )
+            .then(
+                (result) => {
+                    console.log(
+                        "Correo de confirmación enviado correctamente!",
+                        result.text
+                    );
+                },
+                (error) => {
+                    console.log(
+                        "Error al enviar el correo de confirmación:",
+                        error.text
+                    );
+                }
+            );
     };
 
     return (

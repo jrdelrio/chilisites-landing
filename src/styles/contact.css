@@ -22,6 +22,10 @@
 	padding-bottom: 2.5rem;
 }
 
+#contact > h2 {
+	font-size: 3.1rem;
+}
+
 /* grid */
 .grid-container {
 	display: grid;
