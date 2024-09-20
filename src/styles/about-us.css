@@ -26,12 +26,8 @@
 
 /* grid */
 .about-us-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 10px;
-    margin-right: 0;
-    margin-left: 0 !important;
+    display: flex;
+    justify-content: center;
 }
 
 .about-us-img {
@@ -55,6 +51,13 @@
 
 .tech-icons {
     text-align: center;
+}
+
+/* smartphones más chicos que iphone XS*/
+@media (max-width: 400px) {
+    #proyectos h2.section-title {
+        margin-top: 200px !important;
+    }
 }
 
 /* smartphones */
@@ -187,19 +190,15 @@
 
 /*computador*/
 @media (min-width: 992px) {
-    #about-us .container {
-        margin: 50px 8% 50px 8%;
-    }
 
     .about-us-container {
+        margin: 80px 0 0 0;
         margin-left: 0 !important;
     }
 
     .about-us-title {
         display: flex;
-        align-items: flex-end;
-        margin-left: 8%;
-        align-self: self-end;
+        width: 30vw;
     }
 
     .about-us-title .section-title {
@@ -208,6 +207,17 @@
         text-transform: uppercase;
         line-height: 0.9;
         align-self: center;
+    }
+
+    section#about-us .about-us-container .about-us-title .section-title {
+        display: flex;
+        text-align: end;
+        margin-right: 2rem;
+        align-self: flex-start;
+    }
+
+    section#about-us .about-us-container .about-us-body .mt-5 .primary-button-wrapper {
+        float: inline-start;
     }
 
     .about-us-img {
@@ -223,8 +233,9 @@
     }
 
     .about-us-body {
-        margin-left: 2.3rem;
-        margin-right: 1.9rem;
+        margin-left: 2rem;
+        margin-right: 2.3rem;
+        max-width: 650px;
     }
 
     .about-us-body:nth-child(3) {
@@ -232,13 +243,14 @@
     }
 
     .about-us-body p {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 1.6rem;
     }
 
     .technologies {
         margin-left: 30px;
+        margin-top: 4rem;
     }
 
     .technologies .section-title {
@@ -250,12 +262,14 @@
         height: 60px;
         margin-right: 1rem;
         filter: saturate(0);
-        transition: filter 0.2s ease, transform 0.2s ease; /* Agrega transición para filter y transform */
+        transition: filter 0.2s ease, transform 0.2s ease;
+        /* Agrega transición para filter y transform */
     }
-    
+
     .tech-icons img:hover {
         filter: none;
         cursor: pointer;
-        transform: scale(1.3); /* Aumenta el tamaño de la imagen en hover */
+        transform: scale(1.3);
+        /* Aumenta el tamaño de la imagen en hover */
     }
 }

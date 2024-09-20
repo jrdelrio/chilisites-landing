@@ -16,7 +16,6 @@ const Contact = () => {
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });
-        console.log(formData);
     };
 
     const handleSubmit = (event) => {
@@ -37,7 +36,7 @@ const Contact = () => {
 
         emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
             (result) => {
-                alert("Correo enviado correctamente!");
+                alert("¡Correo enviado correctamente! 👌");
                 setFormData({
                     name: "",
                     lastname: "",

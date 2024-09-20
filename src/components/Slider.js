@@ -1,7 +1,4 @@
-import CardProyecto from "../components/CardProyecto";
-import CardQuote from "../components/CardQuote";
-import "../styles/proyectos.css";
-import "../styles/card-proyecto.css";
+import React from "react";
 
 // fotos
 import algeduc from "../img/algeduc.png";
@@ -13,43 +10,9 @@ import alterOffice from "../img/alterOffice.png";
 import dodo from "../img/dodo.png";
 import decima from "../img/decimaPropiedades.png";
 
-import Slider from "../components/Slider";
+import CardQuote from "./CardQuote";
 
-const Proyectos = () => {
-    const imageDefault =
-        "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?cs=srgb&dl=pexels-luis-gomes-166706-546819.jpg&fm=jpg";
-
-    // Array de objetos para los proyectos destacados
-    const proyectosDestacados = [
-        {
-            id: 1,
-            title: "KADÓ REGALOS",
-            description:
-                "Rediseño de sitio web en Shopify, consultoría SEO y SEM.",
-            image: imageDefault,
-        },
-        {
-            id: 2,
-            title: "ALTER OFFICE",
-            description:
-                "Rediseño de sitio web en Wordpress, consultoría SEO y SEM.",
-            image: imageDefault,
-        },
-        {
-            id: 3,
-            title: "SIETE TINTAS",
-            description: "Consultoría SEO, SEM y email marketing.",
-            image: imageDefault,
-        },
-        {
-            id: 4,
-            title: "DÉCIMA PROPIEDADES",
-            description:
-                "Desarrollo de sitio web en wordpress. Consultoría SEO y SEM",
-            image: imageDefault,
-        },
-    ];
-
+const Slider = () => {
     const quotes = [
         {
             id: 1,
@@ -101,25 +64,38 @@ const Proyectos = () => {
         },
     ];
 
+    const slideTrackWidth = `calc(500px * ${quotes.length * 2})`;
+
+    const style = {
+        slideTrack: {
+            width: slideTrackWidth
+        }
+    }
+
     return (
-        <section id="proyectos" className="text-center proyectos-destacados">
-            <h2 className="my-5 section-title font-size">
-                PROYECTOS DESTACADOS
-            </h2>
-            <div className="row mb-3 max-width-md-90vw max-width-sm-90vw max-width-lg-85vw">
-                {proyectosDestacados.map((proyecto) => (
-                    <CardProyecto
-                        key={proyecto.id}
-                        title={proyecto.title}
-                        description={proyecto.description}
-                        image={proyecto.image}
+        <div className="slider">
+            <div className="slide-track" style={style.slideTrack}>
+                {quotes.map((quote) => (
+                    <CardQuote
+                        key={quote.id}
+                        id={quote.id}
+                        image={quote.image}
+                        quote={quote.quote}
+                        empresa={quote.empresa}
+                    />
+                ))}
+                {quotes.map((quote) => (
+                    <CardQuote
+                        key={quote.id}
+                        id={quote.id}
+                        image={quote.image}
+                        quote={quote.quote}
+                        empresa={quote.empresa}
                     />
                 ))}
             </div>
-
-            <Slider />
-        </section>
+        </div>
     );
 };
 
-export default Proyectos;
+export default Slider;

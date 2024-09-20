@@ -24,12 +24,13 @@
 .quote-text {
     justify-content: space-around;
     padding-top: 10px;
+    font-size: .9rem;
 }
 
 .quote-text p {
     font-family: "Montserrat", sans-serif;
-    max-width: 300px;
     text-align: justify;
+    padding-right: 25px;
 }
 
 .quote-text h3 {
@@ -92,12 +93,16 @@
     .sm-px-0 {
         padding: 0 !important;
     }
+
+    .col-lg-6 {
+       width: 100% !important; 
+    }
 }
 
 .img-card-quote {
     height: 100%;
     width: auto;
-    padding: 12px;
+    padding: 8px;
     aspect-ratio: 1 / 1;
     /* Asegura que la imagen sea cuadrada */
     object-fit: cover;
@@ -121,4 +126,8 @@
 .quote-text h3 {
     margin-bottom: 0;
     color: var(--blue-dark);
+}
+
+.quote-text h3 {
+    font-size: 1.3rem;
 }
