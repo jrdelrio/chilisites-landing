@@ -1,8 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc586a92.css",
-    "main.js": "/static/js/main.77835ecb.js",
+    "main.css": "/static/css/main.a05c9d54.css",
+    "main.js": "/static/js/main.32a30cfd.js",
     "static/js/453.fabb2db5.chunk.js": "/static/js/453.fabb2db5.chunk.js",
+    "static/media/siete tintas.png": "/static/media/siete tintas.5836128136264e1ce44a.png",
+    "static/media/decima propiedades.png": "/static/media/decima propiedades.5fa99d1e73202f26cfed.png",
+    "static/media/alter office.png": "/static/media/alter office.d2c134e8a8368ee211be.png",
+    "static/media/kado.png": "/static/media/kado.ef336a1834bab5cdea03.png",
     "static/media/SEM.png": "/static/media/SEM.38e2d8e429fd7c21413a.png",
     "static/media/diseño-web.png": "/static/media/diseño-web.8740f002ede586dff70d.png",
     "static/media/woocommerce.png": "/static/media/woocommerce.1c6064c464807f374980.png",
@@ -17,12 +21,12 @@
     "static/media/elementor.png": "/static/media/elementor.52fc8d63ece30afdb34a.png",
     "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
     "index.html": "/index.html",
-    "main.bc586a92.css.map": "/static/css/main.bc586a92.css.map",
-    "main.77835ecb.js.map": "/static/js/main.77835ecb.js.map",
+    "main.a05c9d54.css.map": "/static/css/main.a05c9d54.css.map",
+    "main.32a30cfd.js.map": "/static/js/main.32a30cfd.js.map",
     "453.fabb2db5.chunk.js.map": "/static/js/453.fabb2db5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc586a92.css",
-    "static/js/main.77835ecb.js"
+    "static/css/main.a05c9d54.css",
+    "static/js/main.32a30cfd.js"
   ]
 }
