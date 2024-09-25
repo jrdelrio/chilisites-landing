@@ -1,4 +1,3 @@
-import PrimaryButton from "./PrimaryButton";
 import "../styles/card-quote.css";
 
 const CardQuote = (props) => {
@@ -14,7 +13,8 @@ const CardQuote = (props) => {
                     className="img-card-quote"
                     src={props.image}
                     alt=""
-                />
+                    height={'10px'}
+                                    />
                 <div className="quote-text">
                     <p>{props.quote}</p>
                     <h3>{props.empresa}</h3>

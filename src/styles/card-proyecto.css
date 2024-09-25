@@ -6,7 +6,7 @@
 
 /*hover zoom */
 .card-proyecto-title {
-    padding-top: 1.1rem;
+    margin-top: -10px;
     color: var(--blue-dark);
     font-family: "Lalezar", system-ui;
     font-weight: 400;
@@ -37,7 +37,7 @@
 }
 
 .img-proy-dest {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 15px;

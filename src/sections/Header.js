@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/header.css";
 import Navbar from "../components/Navbar";
 import PrimaryButton from "../components/PrimaryButton";
+import IconRocketSvg from "../components/IconRocketSvg";
 
 const Header = () => {
 	return (
@@ -14,6 +15,7 @@ const Header = () => {
 				</h3>
 				<PrimaryButton title="CONTÁCTANOS" />
 			</div>
+			{/* <IconRocketSvg /> */}
 		</header>
 	);
 };

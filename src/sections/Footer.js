@@ -4,8 +4,8 @@ import "../styles/footer.css";
 
 const Footer = () => {
   return (
-    <footer id="footer" className="d-flex py-4 w-100">
-      <div className="container d-flex flex-wrap">
+    <footer id="footer" className="py-4 w-100">
+      <div className="container d-flex">
         <div className="col-sm-5 col-md-4 col-lg-2 sm-center">
           <img src={logo} alt="Logo" />
         </div>
@@ -33,6 +33,16 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="footer-bottom d-flex">
+        <p>Desarrollo web con ❤️ desde España para Chile</p>
+        <div className="footer-contacto">
+          <a href="mailto:contacto@chilisites.com">contacto@chilisites.com</a>
+          <a href="https://wa.me/+34639001594">+34 639 001 594</a>
+          <a href="https://wa.me/+34683340572">+34 683 340 572</a>
+
+        </div>
+
       </div>
     </footer>
   );

@@ -29,8 +29,6 @@ const CardProyecto = (props) => {
                     </summary>
                     <p className="card-proyecto-descr">{props.description}</p>
                 </details>
-
-                {/* <SecondaryButton /> */}
             </div>
         </div>
     );

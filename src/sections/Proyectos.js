@@ -13,6 +13,12 @@ import alterOffice from "../img/alterOffice.png";
 import dodo from "../img/dodo.png";
 import decima from "../img/decimaPropiedades.png";
 
+// fotos proyectos destacados
+import destacadoAlter from "../img/destacados/alter office.png";
+import destacadoDecima from "../img/destacados/decima propiedades.png";
+import destacadoKado from "../img/destacados/kado.png";
+import destacadoSieteTintas from "../img/destacados/siete tintas.png";
+
 import Slider from "../components/Slider";
 
 const Proyectos = () => {
@@ -26,27 +32,27 @@ const Proyectos = () => {
             title: "KADÓ REGALOS",
             description:
                 "Rediseño de sitio web en Shopify, consultoría SEO y SEM.",
-            image: imageDefault,
+            image: destacadoKado,
         },
         {
             id: 2,
             title: "ALTER OFFICE",
             description:
                 "Rediseño de sitio web en Wordpress, consultoría SEO y SEM.",
-            image: imageDefault,
+            image: destacadoAlter,
         },
         {
             id: 3,
             title: "SIETE TINTAS",
             description: "Consultoría SEO, SEM y email marketing.",
-            image: imageDefault,
+            image: destacadoSieteTintas,
         },
         {
             id: 4,
             title: "DÉCIMA PROPIEDADES",
             description:
                 "Desarrollo de sitio web en wordpress. Consultoría SEO y SEM",
-            image: imageDefault,
+            image: destacadoDecima,
         },
     ];
 
