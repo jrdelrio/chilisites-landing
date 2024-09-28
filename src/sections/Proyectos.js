@@ -33,6 +33,7 @@ const Proyectos = () => {
             description:
                 "Rediseño de sitio web en Shopify, consultoría SEO y SEM.",
             image: destacadoKado,
+            link: "https://www.kado.cl/",
         },
         {
             id: 2,
@@ -40,12 +41,14 @@ const Proyectos = () => {
             description:
                 "Rediseño de sitio web en Wordpress, consultoría SEO y SEM.",
             image: destacadoAlter,
+            link: "https://www.alteroffice.cl/en/home/",
         },
         {
             id: 3,
             title: "SIETE TINTAS",
             description: "Consultoría SEO, SEM y email marketing.",
             image: destacadoSieteTintas,
+            link: "https://sietetintas.cl/",
         },
         {
             id: 4,
@@ -53,6 +56,7 @@ const Proyectos = () => {
             description:
                 "Desarrollo de sitio web en wordpress. Consultoría SEO y SEM",
             image: destacadoDecima,
+            link: "https://www.decimapropiedades.cl",
         },
     ];
 
@@ -119,6 +123,7 @@ const Proyectos = () => {
                         title={proyecto.title}
                         description={proyecto.description}
                         image={proyecto.image}
+                        link={proyecto.link}
                     />
                 ))}
             </div>
