@@ -116,7 +116,7 @@ const AboutUs = () => {
                 </div>
             </div>
             <div className="technologies py-5">
-                <h2 className="section-title text-center">tecnologias</h2>
+                <h2 className="section-title text-center">tecnologías</h2>
                 <div className="tech-icons">
                     {technologies.map((tech, index) => (
                         <img
