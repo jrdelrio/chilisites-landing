@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.a3ecebe7.css",
-    "main.js": "/static/js/main.1ac58f2a.js",
+    "main.css": "/static/css/main.3c768a67.css",
+    "main.js": "/static/js/main.537f08c7.js",
     "static/js/453.fabb2db5.chunk.js": "/static/js/453.fabb2db5.chunk.js",
     "static/media/siete tintas.png": "/static/media/siete tintas.5836128136264e1ce44a.png",
     "static/media/decima propiedades.png": "/static/media/decima propiedades.5fa99d1e73202f26cfed.png",
     "static/media/alter office.png": "/static/media/alter office.d2c134e8a8368ee211be.png",
     "static/media/kado.png": "/static/media/kado.ef336a1834bab5cdea03.png",
+    "static/media/srodillo.png": "/static/media/srodillo.ae0a6981f366f8c94351.png",
     "static/media/SEM.png": "/static/media/SEM.38e2d8e429fd7c21413a.png",
     "static/media/diseño-web.png": "/static/media/diseño-web.8740f002ede586dff70d.png",
     "static/media/woocommerce.png": "/static/media/woocommerce.1c6064c464807f374980.png",
@@ -14,6 +15,7 @@
     "static/media/adwords.png": "/static/media/adwords.1b130a7fcad83288832d.png",
     "static/media/shopify.png": "/static/media/shopify.070f69c8bc0e31b0f258.png",
     "static/media/SEO.png": "/static/media/SEO.757ad0198ed1ab0f6286.png",
+    "static/media/algeduc.png": "/static/media/algeduc.d2b1ccfd7389c4c44b09.png",
     "static/media/angeladelriopasteleria.png": "/static/media/angeladelriopasteleria.468fe69bcd6d957dcbf3.png",
     "static/media/wordpress.png": "/static/media/wordpress.11ed091523e3152b651f.png",
     "static/media/background-image-logo.png": "/static/media/background-image-logo.cc7ff091aba819d51be9.png",
@@ -21,12 +23,12 @@
     "static/media/elementor.png": "/static/media/elementor.52fc8d63ece30afdb34a.png",
     "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
     "index.html": "/index.html",
-    "main.a3ecebe7.css.map": "/static/css/main.a3ecebe7.css.map",
-    "main.1ac58f2a.js.map": "/static/js/main.1ac58f2a.js.map",
+    "main.3c768a67.css.map": "/static/css/main.3c768a67.css.map",
+    "main.537f08c7.js.map": "/static/js/main.537f08c7.js.map",
     "453.fabb2db5.chunk.js.map": "/static/js/453.fabb2db5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3ecebe7.css",
-    "static/js/main.1ac58f2a.js"
+    "static/css/main.3c768a67.css",
+    "static/js/main.537f08c7.js"
   ]
 }
