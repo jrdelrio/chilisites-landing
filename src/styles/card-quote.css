@@ -19,6 +19,7 @@
 
 .quote-card img {
     object-fit: contain;
+    padding: 15px;
 }
 
 .quote-text {

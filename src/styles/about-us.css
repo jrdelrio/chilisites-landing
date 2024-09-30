@@ -100,10 +100,8 @@
 
     .about-us-body {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         font-family: "Montserrat", sans-serif;
-        margin-right: 15px;
-        margin-left: 15px;
     }
 
     .technologies {
