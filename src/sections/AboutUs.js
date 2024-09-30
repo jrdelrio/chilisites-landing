@@ -89,39 +89,6 @@ const AboutUs = () => {
     ];
 
     return (
-        // <section id="about-us">
-        //   <div className="container about-us-container">
-        //     <div className="about-us-title">
-        //       <h2 className="section-title">sobre nosotros</h2>
-        //     </div>
-        //     <div className="about-us-body">
-        //       <p>
-        //         Somos una pequeña agencia de Marketing Digital dedicada a ayudar a
-        //         PyMES a empezar, crecer y mejorar sus resultados.
-        //       </p>
-        //       <p>
-        //         Creemos en que cada proyecto tiene mucho potencial si se asesora y
-        //         conecta con agencias que realmente les interesen los resultados de
-        //         sus clientes.
-        //       </p>
-        //       <p>
-        //         Nos esforzamos en ayudarte a entender cómo funciona tu sitio y
-        //         campañas en base a métricas.
-        //       </p>
-        //       <div className="mt-5">
-        //         <PrimaryButton title="CONTÁCTANOS" />
-        //       </div>
-        //     </div>
-        //   </div>
-        //   <div className="technologies pt-5">
-        //     <h2 className="section-title text-center">tecnologias</h2>
-        //     <div className="tech-icons">
-        //       {technologies.map((tech, index) => (
-        //         <img key={index} src={tech.src} alt={tech.alt} title={tech.title} />
-        //       ))}
-        //     </div>
-        //   </div>
-        // </section>
         <section id="about-us">
             <div className="about-us-container">
                 <div className="about-us-title">

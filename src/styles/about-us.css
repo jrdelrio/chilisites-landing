@@ -62,7 +62,7 @@
 
 /* smartphones */
 @media (max-width: 575.98px) {
-    #about-us .container {
+    .about-us-container {
         margin: 50px 8% 50px 8%;
     }
 
@@ -128,7 +128,7 @@
 
 /* tablets */
 @media (min-width: 576px) and (max-width: 991.98px) {
-    #about-us .container {
+    .about-us-container {
         margin: 50px 10% 50px 10%;
     }
 
