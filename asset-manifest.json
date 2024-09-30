@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3c768a67.css",
-    "main.js": "/static/js/main.537f08c7.js",
+    "main.css": "/static/css/main.bc7ca858.css",
+    "main.js": "/static/js/main.d637b99c.js",
     "static/js/453.fabb2db5.chunk.js": "/static/js/453.fabb2db5.chunk.js",
     "static/media/siete tintas.png": "/static/media/siete tintas.5836128136264e1ce44a.png",
     "static/media/decima propiedades.png": "/static/media/decima propiedades.5fa99d1e73202f26cfed.png",
@@ -23,12 +23,12 @@
     "static/media/elementor.png": "/static/media/elementor.52fc8d63ece30afdb34a.png",
     "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
     "index.html": "/index.html",
-    "main.3c768a67.css.map": "/static/css/main.3c768a67.css.map",
-    "main.537f08c7.js.map": "/static/js/main.537f08c7.js.map",
+    "main.bc7ca858.css.map": "/static/css/main.bc7ca858.css.map",
+    "main.d637b99c.js.map": "/static/js/main.d637b99c.js.map",
     "453.fabb2db5.chunk.js.map": "/static/js/453.fabb2db5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c768a67.css",
-    "static/js/main.537f08c7.js"
+    "static/css/main.bc7ca858.css",
+    "static/js/main.d637b99c.js"
   ]
 }
