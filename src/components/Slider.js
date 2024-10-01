@@ -57,12 +57,12 @@ const Slider = () => {
         //     quote: '"--La creatividad y dedicación de su equipo nos permitió lanzar una campaña muy exitosa. Los recomendamos ampliamente."',
         //     empresa: "DODO",
         // },
-        // {
-        //     id: 8,
-        //     image: decima,
-        //     quote: '"--Son unos verdaderos profesionales. Desde el primer contacto, demostraron compromiso y excelencia en su trabajo."',
-        //     empresa: "DÉCIMA PROPIEDADES",
-        // },
+        {
+            id: 8,
+            image: decima,
+            quote: '"Hemos tenido una excelente experiencia, demostraron compromiso, creatividad y profesionalismo, lanzando campañas que aumentaron nuestros clientes."',
+            empresa: "DÉCIMA PROPIEDADES",
+        },
         {
             id: 9,
             image: srodillo,
