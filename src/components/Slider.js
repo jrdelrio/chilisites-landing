@@ -71,13 +71,15 @@ const Slider = () => {
         },
     ];
 
-    const slideTrackWidth = `calc(500px * ${quotes.length * 2})`;
+    const slideTrackWidth = 500 * quotes.length * 2;
+    console.log(typeof slideTrackWidth);
+    console.log(slideTrackWidth);
 
     const style = {
         slideTrack: {
-            width: slideTrackWidth
-        }
-    }
+            width: slideTrackWidth,
+        },
+    };
 
     return (
         <div className="slider">
