@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc7ca858.css",
-    "main.js": "/static/js/main.597deb10.js",
+    "main.css": "/static/css/main.e833eda1.css",
+    "main.js": "/static/js/main.448d046d.js",
     "static/js/453.fabb2db5.chunk.js": "/static/js/453.fabb2db5.chunk.js",
-    "static/media/siete tintas.png": "/static/media/siete tintas.5836128136264e1ce44a.png",
-    "static/media/decima propiedades.png": "/static/media/decima propiedades.5fa99d1e73202f26cfed.png",
-    "static/media/alter office.png": "/static/media/alter office.d2c134e8a8368ee211be.png",
-    "static/media/kado.png": "/static/media/kado.ef336a1834bab5cdea03.png",
+    "static/media/siete tintas.png": "/static/media/siete tintas.43fb8307b03f2746eb83.png",
+    "static/media/decima propiedades.png": "/static/media/decima propiedades.e227c18d6114ae9c5a91.png",
+    "static/media/alter office.png": "/static/media/alter office.ba4a722ead957b4945e8.png",
+    "static/media/kado.png": "/static/media/kado.be51b1d2f4c0d44a4363.png",
     "static/media/srodillo.png": "/static/media/srodillo.ae0a6981f366f8c94351.png",
     "static/media/SEM.png": "/static/media/SEM.38e2d8e429fd7c21413a.png",
     "static/media/diseño-web.png": "/static/media/diseño-web.8740f002ede586dff70d.png",
@@ -23,12 +23,12 @@
     "static/media/elementor.png": "/static/media/elementor.52fc8d63ece30afdb34a.png",
     "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
     "index.html": "/index.html",
-    "main.bc7ca858.css.map": "/static/css/main.bc7ca858.css.map",
-    "main.597deb10.js.map": "/static/js/main.597deb10.js.map",
+    "main.e833eda1.css.map": "/static/css/main.e833eda1.css.map",
+    "main.448d046d.js.map": "/static/js/main.448d046d.js.map",
     "453.fabb2db5.chunk.js.map": "/static/js/453.fabb2db5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc7ca858.css",
-    "static/js/main.597deb10.js"
+    "static/css/main.e833eda1.css",
+    "static/js/main.448d046d.js"
   ]
 }
