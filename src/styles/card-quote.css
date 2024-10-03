@@ -7,7 +7,6 @@
 .quote-card {
     background-color: white;
     border-radius: 12px;
-    height: 200px;
     display: flex;
     align-items: center;
     padding: 10px;
@@ -20,6 +19,7 @@
 .quote-card img {
     object-fit: contain;
     padding: 15px;
+    margin-right: 0;
 }
 
 .quote-text {
@@ -31,7 +31,7 @@
 .quote-text p {
     font-family: "Montserrat", sans-serif;
     text-align: start;
-    padding-right: 25px;
+    padding-right: 10px;
 }
 
 .quote-text h3 {

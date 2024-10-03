@@ -27,18 +27,18 @@ const Slider = () => {
             quote: '"Desde nuestra primera reunión demostraron mucho profesionalismo y creatividad, al poco tiempo ya sus estrategias empezaron a dar frutos visibles."',
             empresa: "ANGELA DEL RIO PASTELERÍA",
         },
-        // {
-        //     id: 3,
-        //     image: kado,
-        //     quote: '"---El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
-        //     empresa: "KADÓ REGALOS",
-        // },
-        // {
-        //     id: 4,
-        //     image: sieteTintas,
-        //     quote: '"---Gracias a su asesoría, hemos logrado mejorar significativamente nuestros procesos. Recomiendo sus servicios sin dudar."',
-        //     empresa: "SIETE TINTAS",
-        // },
+        {
+            id: 3,
+            image: kado,
+            quote: '"---El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
+            empresa: "KADÓ REGALOS",
+        },
+        {
+            id: 4,
+            image: sieteTintas,
+            quote: '"---Gracias a su asesoría, hemos logrado mejorar significativamente nuestros procesos. Recomiendo sus servicios sin dudar."',
+            empresa: "SIETE TINTAS",
+        },
         // {
         //     id: 5,
         //     image: alterOffice,
@@ -71,19 +71,9 @@ const Slider = () => {
         },
     ];
 
-    const slideTrackWidth = 500 * quotes.length * 2;
-    console.log(typeof slideTrackWidth);
-    console.log(slideTrackWidth);
-
-    const style = {
-        slideTrack: {
-            width: slideTrackWidth,
-        },
-    };
-
     return (
         <div className="slider">
-            <div className="slide-track" style={style.slideTrack}>
+            <div className="slide-track">
                 {quotes.map((quote) => (
                     <CardQuote
                         key={quote.id}
@@ -92,6 +82,7 @@ const Slider = () => {
                         quote={quote.quote}
                         empresa={quote.empresa}
                     />
+
                 ))}
                 {quotes.map((quote) => (
                     <CardQuote
