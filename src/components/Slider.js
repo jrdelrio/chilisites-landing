@@ -27,16 +27,16 @@ const Slider = () => {
             quote: '"Desde nuestra primera reunión demostraron mucho profesionalismo y creatividad, al poco tiempo ya sus estrategias empezaron a dar frutos visibles."',
             empresa: "ANGELA DEL RIO PASTELERÍA",
         },
-        {
-            id: 3,
-            image: kado,
-            quote: '"---El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
-            empresa: "KADÓ REGALOS",
-        },
+        // {
+        //     id: 3,
+        //     image: kado,
+        //     quote: '"---El equipo de esta empresa es muy atento y siempre dispuesto a ayudar. Sin duda, seguiremos colaborando con ellos."',
+        //     empresa: "KADÓ REGALOS",
+        // },
         {
             id: 4,
             image: sieteTintas,
-            quote: '"---Gracias a su asesoría, hemos logrado mejorar significativamente nuestros procesos. Recomiendo sus servicios sin dudar."',
+            quote: '"Estamos muy contentos trabajando con ellos. Disposición siempre excelente y cada duda que tenemos o necesitamos una solución, están para aconsejarnos. Vamos creciendo!"',
             empresa: "SIETE TINTAS",
         },
         // {

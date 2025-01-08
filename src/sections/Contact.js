@@ -21,6 +21,18 @@ const Contact = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
+        // Validación de campos requeridos
+        if (
+            !formData.name ||
+            !formData.lastname ||
+            !formData.email ||
+            !formData.phone ||
+            !formData.comment
+        ) {
+            alert("Por favor, rellena todos los campos del formulario de contacto.");
+            return; // Detiene la ejecución si faltan campos
+        }
+
         const templateParams = {
             from_name: formData.name,
             from_lastname: formData.lastname,
